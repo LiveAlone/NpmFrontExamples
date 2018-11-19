@@ -7,7 +7,9 @@
     "doc": "doc"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npm install",
+    "build": "webpack --config webpack.config.js",
+    "test": "Error: no test specified"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,8 @@
   "devDependencies": {
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
   }
 }

@@ -11,3 +11,6 @@ template html 文件目录
 ## webpack 依赖包管理方式
 npm 安装 webpack 依赖包内容, 见 doc/webpack_doc.md
 
+## lodash 安装支持
+lodash 数组简化操作支持 ``` npm install --save lodash ``` 
+
