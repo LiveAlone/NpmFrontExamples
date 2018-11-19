@@ -8,6 +8,7 @@
   },
   "scripts": {
     "prestart": "npm install",
+    "clean": "rm -rf dist",
     "build": "webpack --config webpack.config.js",
     "test": "Error: no test specified"
   },
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/LiveAlone/NpmFrontExamples#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^1.0.1",
     "csv-loader": "^3.0.2",
     "file-loader": "^2.0.0",

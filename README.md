@@ -26,3 +26,10 @@ rules 支持 use 对应的loader
 ## webpackage-html-plugin 
 WebpackHtmlPlugin 支持 生成 index.html ``` npm install html-webpack-plugin --save-dev ```
 dist 自动生成 html 插件内容。
+
+# cvs xml loader 文件配置加载方式
+cvs xml 文件内容loader  加载方式 ``` npm install --save-dev csv-loader xml-loader ```
+
+# output 相关插件
+  1. 上面 html-webpack-plugin html 插件, 生成定义的html 文件
+  2. clean-webpack-plugin 通过插件方式, 启动的时候, 删除 dist ``` npm install --save-dev clean-webpack-plugin ```
