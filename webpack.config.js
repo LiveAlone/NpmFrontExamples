@@ -8,9 +8,11 @@ const TEM_PATH = path.resolve(ROOT_PATH, 'template');
 
 // plugin 插件方式 导入 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+var ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
-  mode: 'development',
+  // mode: 'development',  // 指定mode, WARN 实践 通过命令行指定
   entry: {
     main: '@/index.js'
   },
@@ -18,6 +20,10 @@ module.exports = {
     path: DIST_PATH,
     filename: '[name].js'
   },
+
+  // 热部署支持
+  "watch": "webpack --watch",
+
   resolve: {
     extensions: ['.js', '.vue'],
     alias:{
@@ -50,6 +56,8 @@ module.exports = {
     ]
   },
   plugins: [
+    // new ManifestPlugin(),
+    new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: path.resolve(TEM_PATH, 'index.html')

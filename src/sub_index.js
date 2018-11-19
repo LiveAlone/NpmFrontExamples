@@ -1,3 +1,4 @@
 export default function printMe(){
-  console.log('this is sub index content print Me content');
+  conole.log('this is sub index content print Me content');
+  // console.log('this is sub index content print Me content');
 }
