@@ -36,3 +36,5 @@ cvs xml 文件内容loader  加载方式 ``` npm install --save-dev csv-loader x
   2. clean-webpack-plugin 通过插件方式, 启动的时候, 删除 dist ``` npm install --save-dev clean-webpack-plugin ```
   3. webpack-manifest-plugin 插件 生成manifest 打包目录清单 ``` npm install --save-dev webpack-manifest-plugin ```
 
+## vue 模块开发集成
+doc vue_doc.md vue 不同的模块支持

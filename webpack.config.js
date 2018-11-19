@@ -14,18 +14,25 @@ var ManifestPlugin = require('webpack-manifest-plugin');
 module.exports = {
   // mode: 'development',  // 指定mode, WARN 实践 通过命令行指定
   entry: {
-    main: '@/index.js'
+    // main: '@/index.js'
+    main: '@/vue_main.js'
   },
   output: {
     path: DIST_PATH,
     filename: '[name].js',
     publicPath: '/'
   },
+  // optimization: {
+  //   splitChunks: {
+  //     chunks: 'all'
+  //   }
+  // },
   devServer: {
     historyApiFallback: true,
     noInfo: true,
     contentBase: DIST_PATH
   },
+  devtool: '#eval-source-map',
   resolve: {
     extensions: ['.js', '.vue'],
     alias:{

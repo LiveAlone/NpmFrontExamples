@@ -38,3 +38,19 @@ mode 开发模式: development, production, none, 不同的模式, 不同的插�
   导入方式 ``` npm install --save-dev express webpack-dev-middleware ```
   webpack.config.js output 指定路径 ``` publicPath: '/' ```
   配置 server.js 启动 node server.js 启动页面路径方式
+
+热部署模块支持, 支持 HotModuleReplacementPlugin, --hot 热部署替换方式。
+
+## chunk 拆分main.js
+entry point 入口打包引入文件， 但是 打包生成单个 js 文件, 文件太大需要拆分。 (js 逻辑 分块, 懒加载方式)
+代码拆分方式: https://webpack.docschina.org/guides/code-splitting/ 
+1. chunk 拆分公用
+```
+ optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
+```
+2. import 通过异步加载方式支持, js 单个文件过大的情况。
+
