@@ -8,7 +8,7 @@
   },
   "scripts": {
     "prestart": "npm install",
-    "start": "webpack-dev-server --mode development --open --inline --hot --port 5555",
+    "start": "webpack-dev-server --mode=development --open --inline --hot --port 5555",
     "build": "webpack --mode=production --progress --hide-modules --config webpack.config.js",
     "server": "node server.js"
   },
@@ -31,6 +31,7 @@
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^0.23.1",
+    "vue-loader": "^15.4.2",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-middleware": "^3.4.0",

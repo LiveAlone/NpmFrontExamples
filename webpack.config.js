@@ -9,13 +9,14 @@ const TEM_PATH = path.resolve(ROOT_PATH, 'template');
 // plugin 插件方式 导入 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-var ManifestPlugin = require('webpack-manifest-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
+// const { VueLoaderPlugin } = require('vue-loader')
 
 module.exports = {
   // mode: 'development',  // 指定mode, WARN 实践 通过命令行指定
   entry: {
-    // main: '@/index.js'
-    main: '@/vue_main.js'
+    main: '@/index.js'
+    // main: '@/vue_main.js'
   },
   output: {
     path: DIST_PATH,
@@ -34,7 +35,7 @@ module.exports = {
   },
   devtool: '#eval-source-map',
   resolve: {
-    extensions: ['.js', '.vue'],
+    extensions: ['*', '.js', '.vue', '.json'],
     alias:{
       '@': SRC_PATH,
       'vue$': 'vue/dist/vue.esm.js'
@@ -42,6 +43,7 @@ module.exports = {
   },
   module: {
     rules:[
+      { test: /\.vue$/, use: ['vue-loader'] },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
@@ -71,6 +73,7 @@ module.exports = {
       filename: 'index.html',
       template: path.resolve(TEM_PATH, 'index.html')
     })
+    // ,new VueLoaderPlugin()
   ]
 };
 
