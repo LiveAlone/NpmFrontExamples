@@ -1,0 +1,27 @@
+{
+  "name": "NpmFrontExamples",
+  "version": "1.0.0",
+  "description": "init 一个前端项目, 用于学习不同的前端架构, 不同的网页类型, 路由方式等等。",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiveAlone/NpmFrontExamples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiveAlone/NpmFrontExamples/issues"
+  },
+  "homepage": "https://github.com/LiveAlone/NpmFrontExamples#readme",
+  "devDependencies": {
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
