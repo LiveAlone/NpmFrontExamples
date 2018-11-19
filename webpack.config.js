@@ -6,6 +6,9 @@ const SRC_PATH = path.resolve(ROOT_PATH, 'src');
 const DIST_PATH = path.resolve(ROOT_PATH, 'dist');
 const TEM_PATH = path.resolve(ROOT_PATH, 'template');
 
+// plugin 插件方式 导入 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   mode: 'development',
   entry: {
@@ -27,9 +30,21 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader']
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: '前端项目搭建',
+      inject: 'body',
+      filename: 'index.html',
+      template: path.resolve(TEM_PATH, 'index.html')
+    })
+  ]
 };
 
 

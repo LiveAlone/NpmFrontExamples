@@ -2,9 +2,10 @@
 init 一个前端项目, 用于学习不同的前端架构, 不同的网页类型, 路由方式等等。
 
 ## 项目目录结构
-src js 业务逻辑文件相关内容
-template html 文件目录
-src/style .css .less 支持样式问价结构
+src js 业务逻辑文件相关内容。
+template html 文件目录。
+src/style .css .less 支持样式问价结构。
+src/pic jpg png 等 不同的资源文件加载方式。
 
 ## npm 依赖包管理方式
 初始化 npm 依赖包管理 ``` npm init -y ```
@@ -19,3 +20,9 @@ lodash 数组简化操作支持 ``` npm install --save lodash ```
 npm 样式文件加载器 ```npm install --save-dev style-loader css-loader```
 rules 支持 use 对应的loader
 
+## file-loader 
+通过File-loader ``` npm install --save-dev file-loader ``` 支持 img 图片资源加载。 Font 字体文件加载方式。
+
+## webpackage-html-plugin 
+WebpackHtmlPlugin 支持 生成 index.html ``` npm install html-webpack-plugin --save-dev ```
+dist 自动生成 html 插件内容。
