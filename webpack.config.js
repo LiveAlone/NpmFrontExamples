@@ -16,7 +16,9 @@ module.exports = {
   // mode: 'development',  // 指定mode, WARN 实践 通过命令行指定
   entry: {
     // main: '@/index.js'
-    main: '@/vue_main.js'
+    // main: '@/vue_main.js'
+    // main: '@/vue_router.js'
+    main: '@/vuex_index.js'
   },
   output: {
     path: DIST_PATH,
@@ -71,7 +73,7 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: path.resolve(TEM_PATH, 'vue_index.html')
+      template: path.resolve(TEM_PATH, 'vuex_index.html')
     }),
     new VueLoaderPlugin()
   ]

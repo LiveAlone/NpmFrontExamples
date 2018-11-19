@@ -17,3 +17,24 @@ vue-loader 支持对 .vue 文件加载安装, 修改配置文件支持
 
 ### vue-router 
 install 方式 ``` npm install vue-router --save ``` vue-router 支持路由导入方式, 不同界面导航方式。
+
+定义 router-link router-view 定义Link路由方式, js 文件方式, 支持 :id 路由。
+
+### vuex 监控状态修改
+支持页面 Application State 监控方式 ``` npm install vuex --save ``` 
+1. Vue.use(Vuex) 方式, 适用 Vuex 状态管理
+2. Vuex 基于状态管理方式, 动态状态修改
+
+### 组件之间的数据传递
+1. 父子组件之间数据传递
+2. 兄弟之间组件传递
+3. 基于 Bus.js 组件, 事件传递方式。
+
+### 后端数据交互
+1. 后台nodejs 服务提供, ``` npm install koa koa-router --save-dev ``` 提供访问方式
+2. koa2 提供跨域访问方式 ``` npm install koa2-cors --save-dev ```
+3. axios 后台Server 数据访问 ``` npm install axios --save ```
+
+### 前端样式支持
+1. element-ui 
+2. css less 提供 样式数据的转换方式。
