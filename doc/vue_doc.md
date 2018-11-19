@@ -14,3 +14,6 @@ vue-loader loader支持vue 文件加载 ``` npm install vue-loader --save-dev ``
 ### vue-loader 
 vue-loader 支持对 .vue 文件加载安装, 修改配置文件支持 
 命令 ``` npm install vue-loader vue-html-loader vue-template-compiler  --save-dev ``` 
+
+### vue-router 
+install 方式 ``` npm install vue-router --save ``` vue-router 支持路由导入方式, 不同界面导航方式。
