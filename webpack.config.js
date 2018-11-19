@@ -18,12 +18,14 @@ module.exports = {
   },
   output: {
     path: DIST_PATH,
-    filename: '[name].js'
+    filename: '[name].js',
+    publicPath: '/'
   },
-
-  // 热部署支持
-  "watch": "webpack --watch",
-
+  devServer: {
+    historyApiFallback: true,
+    noInfo: true,
+    contentBase: DIST_PATH
+  },
   resolve: {
     extensions: ['.js', '.vue'],
     alias:{

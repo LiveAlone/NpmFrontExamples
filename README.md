@@ -12,6 +12,7 @@ src/pic jpg png 等 不同的资源文件加载方式。
 
 ## webpack 依赖包管理方式
 npm 安装 webpack 依赖包内容, 见 doc/webpack_doc.md
+  1. 不同模式开发, webpack-dev-server 服务方式启动
 
 ## lodash 安装支持
 lodash 数组简化操作支持 ``` npm install --save lodash ``` 

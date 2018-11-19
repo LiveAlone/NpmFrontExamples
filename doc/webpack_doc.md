@@ -22,3 +22,19 @@ mode 开发模式: development, production, none, 不同的模式, 不同的插�
 
 ## 热部署方式
   1. watch 监控方式， 监控文件变化， 自动编译方式 ``` "watch": "webpack --watch", ```
+  2. webpack server ``` npm install --save-dev webpack-dev-server ``` 启动对应的服务配置 
+    json 中数据配置方式
+    ```
+    "start": "webpack-dev-server --open", 
+
+    webpack config js 文件修改方式
+    devServer: {
+      historyApiFallback: true,
+      noInfo: true,
+      contentBase: DIST_PATH
+    },
+    ```
+  3. 三方插件集成方式
+  导入方式 ``` npm install --save-dev express webpack-dev-middleware ```
+  webpack.config.js output 指定路径 ``` publicPath: '/' ```
+  配置 server.js 启动 node server.js 启动页面路径方式
