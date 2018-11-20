@@ -37,5 +37,5 @@ install 方式 ``` npm install vue-router --save ``` vue-router 支持路由导�
 封装request 参数, 用于http 请求方式
 
 ### 前端样式支持
-1. element-ui 
-2. css less 提供 样式数据的转换方式。
+1. element-ui ``` npm install element-ui --save-dev ```
+2. css less 提供 样式数据的转换方式, ``` npm install less less-loader --save-dev ```
