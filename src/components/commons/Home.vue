@@ -1,10 +1,8 @@
-<template>
-    <section id="home">
-        <p> 欢迎适用, 有问题联系Me </p>
-        <router-link to="/main">
-            <el-button type="primary">管理进入</el-button>
-        </router-link>
-    </section>
+<template lang="pug">
+    section#home
+        p 欢迎适用
+        p: strong 使用中有任何问题, 请联系Me
+        router-link(to='/main'): el-button(type='primary') 管理进入
 </template>
 
 <script>
@@ -12,7 +10,6 @@ export default {
     
 }
 </script>
-
 
 <style>
     section#home{

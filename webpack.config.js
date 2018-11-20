@@ -69,6 +69,10 @@ module.exports = {
       {
         test: /\.xml$/,
         use: ['xml-loader']
+      },
+      {
+        test: /\.pug$/,
+        loader: 'pug-plain-loader'
       }
     ]
   },
