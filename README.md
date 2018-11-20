@@ -2,10 +2,14 @@
 init 一个前端项目, 用于学习不同的前端架构, 不同的网页类型, 路由方式等等。
 
 ## 项目目录结构
-src js 业务逻辑文件相关内容。
+src js 业务逻辑文件相关内容, 通过目录区分不同的业务规则
 template html 文件目录。
-src/style .css .less 支持样式问价结构。
-src/pic jpg png 等 不同的资源文件加载方式。
+src/assets 存放资源文件 css img 等
+  1. style .css .less 支持样式问价结构。
+  2. pic jpg png 等 不同的资源文件加载方式。
+  3. data 存储数据文件内容
+components 支持绘制不同的组件
+  1. app 网页整体架构支持
 
 ## npm 依赖包管理方式
 初始化 npm 依赖包管理 ``` npm init -y ```
