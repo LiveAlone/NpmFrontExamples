@@ -48,4 +48,5 @@ doc vue_doc.md vue 不同的模块支持
 ## pug vue support
 pug html 插件编译生成方式, 支持自定义语法标签 ``` npm install pug pug-loader --save-dev ```
 
-
+## Tag 标签相关支持
+1. v1 基础 webpack vue element-ui 集成配置方式
