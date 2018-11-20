@@ -48,6 +48,9 @@
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
+    "acorn": "^6.0.4",
+    "axios": "^0.18.0",
+    "bus": "^0.1.0",
     "lodash": "^4.17.11",
     "papaparse": "^4.6.2",
     "vue": "^2.5.17",

@@ -18,7 +18,8 @@ module.exports = {
     // main: '@/index.js'
     // main: '@/vue_main.js'
     // main: '@/vue_router.js'
-    main: '@/vuex_index.js'
+    // main: '@/vuex_index.js'
+    main: '@/vue_component_main.js'
   },
   output: {
     path: DIST_PATH,
@@ -73,7 +74,7 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: path.resolve(TEM_PATH, 'vuex_index.html')
+      template: path.resolve(TEM_PATH, 'vue_component_main.html')
     }),
     new VueLoaderPlugin()
   ]
