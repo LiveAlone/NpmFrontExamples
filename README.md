@@ -13,6 +13,9 @@ src/components 支持绘制不同的组件
   2. commons 通用界面, 支持数据的显示修改方式。
 src/router 导航界面路由方式
 
+## 项目查询结构
+Home 主进入界面, Main 通过 layout 导航方式, 获取对应的主页信息
+
 ## npm 依赖包管理方式
 初始化 npm 依赖包管理 ``` npm init -y ```
 
@@ -48,6 +51,8 @@ doc vue_doc.md vue 不同的模块支持
 ## pug vue support
 pug html 插件编译生成方式, 支持自定义语法标签 ``` npm install pug pug-loader --save-dev ```
 pug, 拦截方式 ``` npm install --save-dev pug-plain-loader ```
+
+<b>todo transition pug 参数方式</b>
 
 ## Tag 标签相关支持
 1. v1 基础 webpack vue element-ui 集成配置方式

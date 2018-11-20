@@ -1,4 +1,5 @@
 <template lang="pug">
-    div: this is main page content haha
+  div main test content haha
 </template>
+
 
