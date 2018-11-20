@@ -15,13 +15,13 @@ const { VueLoaderPlugin } = require('vue-loader');
 module.exports = {
   // mode: 'development',  // 指定mode, WARN 实践 通过命令行指定
   entry: {
-    // main: '@/index.js'
+    main: '@/index_basic.js'
     // main: '@/vue_main.js'
     // main: '@/vue_router.js'
     // main: '@/vuex_index.js'
     // main: '@/vue_component_main.js'
     // main: '@/axios_main.js'
-    main: '@/element_ui_demo.js'
+    // main: '@/element_ui_demo.js'
   },
   output: {
     path: DIST_PATH,
@@ -76,7 +76,7 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: path.resolve(TEM_PATH, 'element_ui_demo.html')
+      template: path.resolve(TEM_PATH, 'index_basic.html')
     }),
     new VueLoaderPlugin()
   ]
