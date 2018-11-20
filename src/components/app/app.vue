@@ -1,5 +1,5 @@
 <template>
     <div>
-        this is main page content
+        <router-view></router-view>
     </div>
 </template>
