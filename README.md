@@ -8,8 +8,10 @@ src/assets 存放资源文件 css img 等
   1. style .css .less 支持样式问价结构。
   2. pic jpg png 等 不同的资源文件加载方式。
   3. data 存储数据文件内容
-components 支持绘制不同的组件
+src/components 支持绘制不同的组件
   1. app 网页整体架构支持
+  2. commons 通用界面, 支持数据的显示修改方式。
+src/router 导航界面路由方式
 
 ## npm 依赖包管理方式
 初始化 npm 依赖包管理 ``` npm init -y ```
@@ -42,3 +44,8 @@ cvs xml 文件内容loader  加载方式 ``` npm install --save-dev csv-loader x
 
 ## vue 模块开发集成
 doc vue_doc.md vue 不同的模块支持
+
+## pug vue support
+pug html 插件编译生成方式, 支持自定义语法标签 ``` npm install pug pug-loader --save-dev ```
+
+

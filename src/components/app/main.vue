@@ -1,19 +1,5 @@
 <template>
-  <div class="msg"> {{ msg }} </div>
+    <div>
+        <p> this is main content page content </p>
+    </div>
 </template>
-
-<script>
-export default {
-  data(){
-    return {
-      msg: 'template again'
-    }
-  }
-}
-</script>
-
-<style>
-  .msg{
-    color: grey;
-  }
-</style>
