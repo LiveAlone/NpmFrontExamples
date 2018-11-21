@@ -1,6 +1,14 @@
 <template lang="pug">
   el-aside#aside
     el-menu
+      el-submenu(v-for='menu in menus' :key="menu.index" :index="menu.index")
+        template(slot='title')
+          i(:class='`el-icon-${menu.icon}`')
+          span {{ menu.name }}
+        el-menu-item(v-for="item in menu.children" :key="item.index" :index="item.index")
+          template(slot='title')
+            i(:class='`el-icon-${item.icon}`')
+            span {{ item.name }}
       el-submenu(index=1)
         template(slot='title')
           i(class='el-icon-menu')
@@ -24,7 +32,9 @@
 </template>
 
 <script>
-
+export default {
+    props: ['menus']
+}
 </script>
 
 <style>

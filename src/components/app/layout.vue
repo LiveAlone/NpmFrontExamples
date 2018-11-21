@@ -1,6 +1,6 @@
 <template lang="pug">
     el-container#app
-        navMenu
+        navMenu(:menus='menus')
         el-container
             el-header#header
                 div 这个是容器标题内容
@@ -11,8 +11,15 @@
 
 <script>
 import NavMenu from '@/components/app/navMenu.vue'
+import {menus, config} from '@/components/util';
 
 export default {
+    data(){
+        return {
+            menus: menus,
+            projectName: config.projectName
+        }
+    },
     components:{NavMenu}
 }
 </script>
