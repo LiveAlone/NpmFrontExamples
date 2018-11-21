@@ -1,6 +1,6 @@
 <template lang="pug">
   el-aside#aside
-    el-menu(background-color='#545c64' text-color='#fff' active-text-color='#ffd04b')
+    el-menu(router unique-opened :default-active='active' background-color='#545c64' text-color='#fff' active-text-color='#ffd04b')
       el-submenu(v-for='menu in menus' :key="menu.index" :index="menu.index")
         template(slot='title')
           i(:class='`el-icon-${menu.icon}`')
@@ -26,10 +26,20 @@
         methods:{
             ...mapMutations(['addVisitedViews']),
             initialize(){
-                // todo
+                this.active = '/' + this.$route.path.split('/')[1];
+                const { fullPath, name } = this.$route;
+                this.addVisitedViews({ fullPath, name });
             }
+        },
+        watch: {
+            '$router': function () {
+                this.initialize();
+            }
+        },
+        mounted(){
+            this.$nextTick(this.initialize);
         }
-    }
+    };
 </script>
 
 <style>

@@ -5,8 +5,8 @@ export default [
         icon: 'menu',
         name: 'webpack',
         children:[
-            {index: '/official_docs', icon: 'menu', name: '官方文档'},
-            {index: '/examples', icon: 'menu', name: '实例Demo'}
+            {index: '/webpack_official_docs', icon: 'menu', name: '官方文档'},
+            {index: '/webpack_examples', icon: 'menu', name: '实例Demo'}
         ]
     },
     {
@@ -14,8 +14,8 @@ export default [
         icon: 'menu',
         name: 'vue',
         children:[
-            {index: '/official_docs', icon: 'menu', name: '官方文档'},
-            {index: '/examples', icon: 'menu', name: '实例Demo'}
+            {index: '/vue_official_docs', icon: 'menu', name: '官方文档'},
+            {index: '/vue_examples', icon: 'menu', name: '实例Demo'}
         ]
     },
     {
