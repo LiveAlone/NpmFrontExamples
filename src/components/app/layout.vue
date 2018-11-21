@@ -11,7 +11,8 @@
 
 <script>
 import NavMenu from '@/components/app/navMenu.vue'
-import {menus, config} from '@/components/util';
+import config from '@/util/config.js';
+import menus from '@/util/menus.js';
 
 export default {
     data(){

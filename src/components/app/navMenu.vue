@@ -1,6 +1,6 @@
 <template lang="pug">
   el-aside#aside
-    el-menu
+    el-menu(background-color='#545c64' text-color='#fff' active-text-color='#ffd04b')
       el-submenu(v-for='menu in menus' :key="menu.index" :index="menu.index")
         template(slot='title')
           i(:class='`el-icon-${menu.icon}`')
@@ -9,32 +9,27 @@
           template(slot='title')
             i(:class='`el-icon-${item.icon}`')
             span {{ item.name }}
-      el-submenu(index=1)
-        template(slot='title')
-          i(class='el-icon-menu')
-          span 导航一
-        el-menu-item(index=1)
-          template(slot="title")
-          span Webpack
-        el-menu-item(index=2)
-          template(slot='title')
-          span Vue
-      el-submenu(index=2)
-        template(slot='title')
-          i(class='el-icon-menu')
-          span 导航二
-        el-menu-item(index=1)
-          template(slot="title")
-          span Angular
-        el-menu-item(index=2)
-          template(slot='title')
-          span ReactJs
 </template>
 
 <script>
-export default {
-    props: ['menus']
-}
+    import {mapState, mapMutations} from 'vuex';
+    export default {
+        data(){
+            return {
+                active: '/'
+            }
+        },
+        props: ['menus'],
+        computed: {
+            ...mapState(['settings'])
+        },
+        methods:{
+            ...mapMutations(['addVisitedViews']),
+            initialize(){
+                // todo
+            }
+        }
+    }
 </script>
 
 <style>
