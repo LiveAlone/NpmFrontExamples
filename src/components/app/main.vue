@@ -1,5 +1,5 @@
 <template lang="pug">
-  div main test content haha
+  div 这个是 Main Page 页面的数据信息内容
 </template>
 
 
