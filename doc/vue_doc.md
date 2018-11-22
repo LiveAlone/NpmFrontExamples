@@ -39,3 +39,6 @@ install 方式 ``` npm install vue-router --save ``` vue-router 支持路由导�
 ### 前端样式支持
 1. element-ui ``` npm install element-ui --save-dev ```
 2. css less 提供 样式数据的转换方式, ``` npm install less less-loader --save-dev ```
+  - webpack.config.js 支持 less-loader 加载方式
+  - 支持 less 变量动态修改定义方式
+

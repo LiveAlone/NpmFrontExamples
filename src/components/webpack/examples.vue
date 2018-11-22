@@ -1,5 +1,5 @@
 <template lang="pug">
-    div this is webpack examples content
+    div(class="webpack-example") this is webpack examples content
 </template>
 
 <script>
@@ -8,6 +8,9 @@
     }
 </script>
 
-<style scoped>
-
+<style lang="less">
+@var: red;
+.webpack-example{
+    color: @var;
+}
 </style>
