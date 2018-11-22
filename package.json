@@ -10,7 +10,8 @@
     "prestart": "npm install",
     "start": "webpack-dev-server --mode=development --open --inline --hot --port 5555",
     "build": "webpack --mode=production --progress --hide-modules --config webpack.config.js",
-    "server": "node server.js"
+    "server": "node server.js",
+    "lint": "eslint --ext .js,.vue src"
   },
   "repository": {
     "type": "git",

@@ -42,3 +42,8 @@ install 方式 ``` npm install vue-router --save ``` vue-router 支持路由导�
   - webpack.config.js 支持 less-loader 加载方式
   - 支持 less 变量动态修改定义方式
 
+### eslint plugin 插件支持
+- 插件导入
+  - eslint 导入 ``` npm install eslint --save-dev ```
+- 校验方式
+  - eslint xxx.js 当然可以指定目录方式， 参数信息等。
